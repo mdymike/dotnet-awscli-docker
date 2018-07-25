@@ -9,6 +9,8 @@ ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
 RUN apk --no-cache update && \
     apk --no-cache add python py-pip py-setuptools ca-certificates groff less && \
     pip --no-cache-dir install awscli==${AWS_CLI_VERSION} && \
+    apk add --no-cache jq && \
+    apk add --no-cache docker && \
     rm -rf /var/cache/apk/*
 
-RUN apk add --no-cache docker
+
