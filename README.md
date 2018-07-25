@@ -19,7 +19,7 @@ To push to docker hub
 ```
 $ export DOCKER_ID_USER="username"
 $ docker login
-docker push vcard/dotnet-aws-cli-docker
+$ docker push vcard/dotnet-aws-cli-docker
 ```
 
 ## How to use this image
@@ -39,14 +39,14 @@ $ docker run  -d -t --name dotnet-aws-cli-docker vcard/dotnet-aws-cli-docker
 Ensure aws-cli, docker-ce and dotnetcore is installed
 
 ```
-docker exec -it dotnet-aws-cli-docker  ../bin/sh
+$ docker exec -it dotnet-aws-cli-docker  ../bin/sh
 ```
 
 Run the following commands:
 
 ```
-dotnet --version
-aws --version
-docker --version
-exit
+$ dotnet --version
+$ aws --version
+$ docker --version
+$ exit
 ```
