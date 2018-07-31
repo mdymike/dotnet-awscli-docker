@@ -5,7 +5,7 @@
 Run the following command
 
 ```
-$ docker build -t dotnet-awscli-docker
+$ docker build -t dotnet-awscli-docker .
 ```
 
 To tag for dockerhub
