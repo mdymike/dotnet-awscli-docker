@@ -1,17 +1,17 @@
-# dotnet-aws-cli-docker
+# dotnet-awscli-docker
 
 ## How to build this image locally
 
 Run the following command
 
 ```
-$ docker build -t dotnet-aws-cli-docker
+$ docker build -t dotnet-awscli-docker
 ```
 
 To tag for dockerhub
 
 ```
-$ docker tag dotnet-aws-cli-docker vcard/dotnet-aws-cli-docker
+$ docker tag dotnet-awscli-docker vcard/dotnet-awscli-docker
 ```
 
 To push to docker hub
@@ -19,7 +19,7 @@ To push to docker hub
 ```
 $ export DOCKER_ID_USER="username"
 $ docker login
-$ docker push vcard/dotnet-aws-cli-docker
+$ docker push vcard/dotnet-awscli-docker
 ```
 
 ## How to use this image
@@ -33,13 +33,13 @@ $ docker pull vcard/dotnet-aws-cli-docker
 Run the docker container in the background with the following command
 
 ```
-$ docker run  -d -t --name dotnet-aws-cli-docker vcard/dotnet-aws-cli-docker
+$ docker run  -d -t --name dotnet-awscli-docker vcard/dotnet-awscli-docker
 ```
 
 Ensure aws-cli, docker-ce and dotnetcore is installed
 
 ```
-$ docker exec -it dotnet-aws-cli-docker  ../bin/sh
+$ docker exec -it dotnet-awscli-docker  ../bin/sh
 ```
 
 Run the following commands:
