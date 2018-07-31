@@ -27,7 +27,7 @@ $ docker push vcard/dotnet-awscli-docker
 Run the following commands:
 
 ```
-$ docker pull vcard/dotnet-aws-cli-docker
+$ docker pull vcard/dotnet-awscli-docker
 ```
 
 Run the docker container in the background with the following command
